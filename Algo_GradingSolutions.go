@@ -15,8 +15,8 @@ func gradingStudents(grades []int32) []int32 {
 	for _, v := range grades {
 		if v < 38 {
 			gradeArr = append(gradeArr, v)
-		} else if (math.Ceil(float64(v)/5)*5)-float64(v) < 3 {
-			gradeArr = append(gradeArr, int32((math.Ceil(float64(v)/5) * 5)))
+		} else if (math.Round(float64(v)/5)*5)-float64(v) < 3 {
+			gradeArr = append(gradeArr, int32((math.Round(float64(v)/5) * 5)))
 		} else {
 			gradeArr = append(gradeArr, v)
 		}
