@@ -15,7 +15,7 @@ func main() {
 	var x float64
 
 	scanner.Scan()
-	temp_x, _ = strconv.ParseUint(scanner.Text(), 10, 10)
+	temp_x, _ = strconv.ParseUint(scanner.Text(), 0, 0)
 	x = float64(temp_x)
 
 	fmt.Printf("%t\n", PowersOfTwo(x))
