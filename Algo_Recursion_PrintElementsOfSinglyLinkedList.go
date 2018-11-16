@@ -41,5 +41,8 @@ func printLinkedList(head *SinglyLinkedListNode) {
 
 //TODO
 funcMain(){
-	fmt.Println("TODO")
+	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
+
+	listCount, err := strconv.ParseInt(readLine(reader), 10, 64)
+	checkError(err)
 }
