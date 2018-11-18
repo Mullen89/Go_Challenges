@@ -45,4 +45,7 @@ funcMain(){
 
 	listCount, err := strconv.ParseInt(readLine(reader), 10, 64)
 	checkError(err)
+
+	list := SinglyLinkedList{}
+	
 }
