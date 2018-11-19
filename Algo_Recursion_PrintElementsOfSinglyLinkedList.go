@@ -39,7 +39,6 @@ func printLinkedList(head *SinglyLinkedListNode) {
     }
 }
 
-//TODO
 funcMain(){
 	reader := bufio.NewReaderSize(os.Stdin, 1024 * 1024)
 
