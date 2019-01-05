@@ -4,12 +4,22 @@ import (
 	"bufio"
 	"fmt"
 	"io"
-	"math"
 	"os"
 	"strconv"
 	"strings"
 )
 
+func pageCount(n int32, p int32) int32 {
+	if p-1 < n-p {
+		return p / 2
+	} else {
+		return (n / 2) - (p / 2)
+	}
+}
+
+// The below function is a first iteration. the correct, most efficient
+// version of the "pageCount" function is above.
+/**
 func pageCount(n int32, p int32) int32 {
 	if n == p || p == 1 {
 		return 0
@@ -32,7 +42,7 @@ func pageCount(n int32, p int32) int32 {
 		}
 	}
 }
-
+*/
 func main() {
 	reader := bufio.NewReaderSize(os.Stdin, 1024*1024)
 
